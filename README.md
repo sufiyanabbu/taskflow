@@ -8,7 +8,7 @@ A production-quality React frontend application built to demonstrate real-world 
 
 ## Live Demo
 
-🔗 [View Live App](#) ← will update after deployment
+🔗 [View Live App](https://taskflow-nine-kappa.vercel.app)
 
 ---
 
