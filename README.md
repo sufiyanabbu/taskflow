@@ -14,9 +14,17 @@ A production-quality React frontend application built to demonstrate real-world 
 
 ## Screenshots
 
-> Dashboard with real-time filtering and stats bar
+### Dashboard
+![Dashboard](public/screenshots/dashboard.png)
 
-> Settings page with profile form and toggle switches
+### My Tasks
+![My Tasks](public/screenshots/mytask.png)
+
+### Team
+![Team](public/screenshots/team.png)
+
+### Settings
+![Settings](public/screenshots/settings.png)
 
 ---
 
