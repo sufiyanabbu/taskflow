@@ -1,0 +1,21 @@
+.page {
+  max-width: 900px;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+}
