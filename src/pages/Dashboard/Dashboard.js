@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TaskCard from '../../components/Card/TaskCard';
 import TaskFilters from '../../components/TaskFilters/TaskFilters';
+import StatsBar from '../../components/StatsBar/StatsBar';
 import tasks from '../../data/tasks';
 import styles from './Dashboard.module.css';
 
@@ -22,6 +23,8 @@ function Dashboard() {
         <h1 className={styles.title}>Dashboard</h1>
         <p className={styles.subtitle}>{filteredTasks.length} tasks</p>
       </div>
+
+      <StatsBar tasks={tasks} />
 
       <TaskFilters
         search={search}
