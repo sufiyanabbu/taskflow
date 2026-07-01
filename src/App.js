@@ -1,73 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AppLayout from './components/Layout/AppLayout';
-import TaskCard from './components/Card/TaskCard';
-import tasks from './data/tasks';
+import Dashboard from './pages/Dashboard/Dashboard';
+import MyTasks from './pages/MyTasks/MyTasks';
+import Team from './pages/Team/Team';
+import Settings from './pages/Settings/Settings';
 
 function App() {
   return (
-    <AppLayout>
-      <h1>Dashboard</h1>
-      <p>Welcome to TaskFlow</p>
-
-      <div style={{ marginTop: '24px' }}>
-        {tasks.map((task) => (
-          <TaskCard key={task.id} task={task} />
-        ))}
-      </div>
-    </AppLayout>
+    <BrowserRouter>
+      <AppLayout>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/my-tasks" element={<MyTasks />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </AppLayout>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-// import AppLayout from './components/Layout/AppLayout';
-// import Button from './components/Button/Button';
-// import Card from './components/Card/Card';
-
-// function App() {
-//   return (
-//     <AppLayout>
-//       <h1>Dashboard</h1>
-//       <p>Welcome to TaskFlow</p>
-
-//       <div style={{ marginTop: '24px', display: 'flex', gap: '12px' }}>
-//         <Button variant="primary">Create Task</Button>
-//         <Button variant="secondary">Cancel</Button>
-//         <Button variant="danger">Delete</Button>
-//       </div>
-
-//       <Card className="" >
-//         <h3>Sample Card</h3>
-//         <p>This is what a card looks like.</p>
-//       </Card>
-//     </AppLayout>
-//   );
-// }
-
-// export default App;
-
-
-
-
-
-
-// import AppLayout from './components/Layout/AppLayout';
-
-// function App() {
-//   return (
-//     <AppLayout>
-//       <h1>Dashboard</h1>
-//       <p>Welcome to TaskFlow</p>
-//     </AppLayout>
-//   );
-// }
-
-// export default App;

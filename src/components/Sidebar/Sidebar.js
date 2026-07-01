@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Sidebar.module.css';
 
 function Sidebar() {
@@ -6,10 +7,10 @@ function Sidebar() {
       <div className={styles.logo}>TaskFlow</div>
 
       <nav className={styles.nav}>
-        <a href="#" className={styles.navLink}>Dashboard</a>
-        <a href="#" className={styles.navLink}>My Tasks</a>
-        <a href="#" className={styles.navLink}>Team</a>
-        <a href="#" className={styles.navLink}>Settings</a>
+        <NavLink to="/" className={styles.navLink}>Dashboard</NavLink>
+        <NavLink to="/my-tasks" className={styles.navLink}>My Tasks</NavLink>
+        <NavLink to="/team" className={styles.navLink}>Team</NavLink>
+        <NavLink to="/settings" className={styles.navLink}>Settings</NavLink>
       </nav>
     </aside>
   );
