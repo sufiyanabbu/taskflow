@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+# TaskFlow — Team Task Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A production-quality React frontend application built to demonstrate real-world component architecture, state management, routing, and UI design patterns.
 
-## Available Scripts
+![TaskFlow Dashboard](https://img.shields.io/badge/React-18-blue?logo=react) ![Router](https://img.shields.io/badge/React_Router-6-red?logo=reactrouter) ![CSS Modules](https://img.shields.io/badge/CSS-Modules-orange)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗 [View Live App](#) ← will update after deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Dashboard with real-time filtering and stats bar
 
-### `npm run build`
+> Settings page with profile form and toggle switches
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Dashboard** — task list with real-time search, status and priority filters, and a stats bar showing task counts
+- **My Tasks** — filtered view showing only tasks assigned to the current user
+- **Team** — team member cards with role and task count
+- **Settings** — profile form with controlled inputs and preference toggles
+- **Active Navigation** — sidebar highlights the current page using React Router NavLink
+- **Responsive Layout** — sidebar + content shell that scales across screen sizes
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Technology | Purpose |
+|---|---|
+| React 18 | UI component library |
+| React Router v6 | Client-side routing |
+| CSS Modules | Scoped component styling |
+| CSS Variables | Design system / theming |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
+README first — because when you deploy to Vercel and share the live link, the GitHub repo link goes with it. Recruiters will land on your repo and the README is the first thing they see. Let's make it count.
+Create the README
 
-## Learn More
+In VS Code, open README.md in your project root (it already exists from CRA — we'll replace it entirely).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Replace everything in it with this:
+markdown
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# TaskFlow — Team Task Management Dashboard
 
-### Code Splitting
+A production-quality React frontend application built to demonstrate real-world component architecture, state management, routing, and UI design patterns.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![TaskFlow Dashboard](https://img.shields.io/badge/React-18-blue?logo=react) ![Router](https://img.shields.io/badge/React_Router-6-red?logo=reactrouter) ![CSS Modules](https://img.shields.io/badge/CSS-Modules-orange)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Live Demo
 
-### Making a Progressive Web App
+🔗 [View Live App](#) ← will update after deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> Dashboard with real-time filtering and stats bar
 
-### Deployment
+> Settings page with profile form and toggle switches
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Dashboard** — task list with real-time search, status and priority filters, and a stats bar showing task counts
+- **My Tasks** — filtered view showing only tasks assigned to the current user
+- **Team** — team member cards with role and task count
+- **Settings** — profile form with controlled inputs and preference toggles
+- **Active Navigation** — sidebar highlights the current page using React Router NavLink
+- **Responsive Layout** — sidebar + content shell that scales across screen sizes
+
+---
+
+## Tech Stack
+
+|
+ Technology 
+|
+ Purpose 
+|
+
+|
+---
+|
+---
+|
+
+|
+ React 18 
+|
+ UI component library 
+|
+
+|
+ React Router v6 
+|
+ Client-side routing 
+|
+
+|
+ CSS Modules 
+|
+ Scoped component styling 
+|
+
+|
+ CSS Variables 
+|
+ Design system / theming 
+|
+
+
+---
+
+## Project Structure
+
+src/
+├── components/
+│ ├── Button/ # Reusable button with 3 variants
+│ ├── Card/ # Base card + TaskCard
+│ ├── Layout/ # AppLayout shell
+│ ├── Sidebar/ # Navigation with active link highlighting
+│ ├── StatsBar/ # Derived task count stats
+│ └── TaskFilters/ # Search + filter controls
+├── pages/
+│ ├── Dashboard/ # Main view with filtering logic
+│ ├── MyTasks/ # User-specific task view
+│ ├── Team/ # Team member overview
+│ └── Settings/ # Profile and preferences
+├── data/
+│ └── tasks.js # Mock task data
+└── styles/
+├── variables.css # Design tokens
+└── reset.css # CSS reset
+---
+
+## Architecture Decisions
+
+**CSS Variables for design system** — all colors, spacing, typography, and radii are defined once in `variables.css` and referenced everywhere. Changing the accent color updates the entire app.
+
+**CSS Modules for scoped styles** — each component has its own `.module.css` file. No class name collisions, no global stylesheet bloat.
+
+**Smart vs Presentational components** — Dashboard owns all filter state and passes it down to TaskFilters (presentational). TaskFilters holds zero state — it just renders and calls handlers.
+
+**Derived data over stored state** — `filteredTasks` and stats (To Do count, Done count) are computed from the source array on every render rather than stored in separate state variables.
+
+**Mock data layer** — `src/data/tasks.js` mimics a real API response shape, making it straightforward to swap in a real backend later.
+
+---
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/sufiyanabbu/taskflow.git
+
+# Install dependencies
+cd taskflow
+npm install
+
+# Start development server
+npm start
+```
+
+App runs at `http://localhost:3000`
+
+---
+
+## What I Learned
+
+- Component-based architecture and when to split components
+- Lifting state up and props-driven design
+- React Router v6 with NavLink active states
+- Controlled inputs and form state in React
+- Derived data patterns with array methods
+- CSS Modules and design system thinking with CSS variables
+- Professional Git workflow with milestone-based commits
