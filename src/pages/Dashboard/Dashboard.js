@@ -35,13 +35,15 @@ function Dashboard() {
         onPriorityChange={setPriority}
       />
 
-      {filteredTasks.length === 0 ? (
+      <div className={styles.container}>
+        {filteredTasks.length === 0 ? (
         <p className={styles.empty}>No tasks match your filters.</p>
       ) : (
         filteredTasks.map((task) => (
           <TaskCard key={task.id} task={task} />
         ))
       )}
+      </div>
     </div>
   );
 }

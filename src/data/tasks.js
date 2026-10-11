@@ -47,6 +47,14 @@ const tasks = [
     assignee: 'Rahul',
     dueDate: '2026-06-30',
   },
+  {
+    id: 7,
+    title: 'Design app layouts',
+    status: 'To Do',
+    priority: 'Medium',
+    assignee: 'Ayaan',
+    dueDate: '2026-07-08',
+  }
 ];
 
 export default tasks;

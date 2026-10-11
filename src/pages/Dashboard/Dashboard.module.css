@@ -26,3 +26,8 @@
   text-align: center;
   margin-top: var(--space-2xl);
 }
+
+.container {
+  height: 580px;
+  overflow: auto;
+}
