@@ -50,15 +50,6 @@ A production-quality React frontend application built to demonstrate real-world 
 
 ---
 
-## Project Structure
-README first — because when you deploy to Vercel and share the live link, the GitHub repo link goes with it. Recruiters will land on your repo and the README is the first thing they see. Let's make it count.
-Create the README
-
-In VS Code, open README.md in your project root (it already exists from CRA — we'll replace it entirely).
-
-Replace everything in it with this:
-markdown
-
 # TaskFlow — Team Task Management Dashboard
 
 A production-quality React frontend application built to demonstrate real-world component architecture, state management, routing, and UI design patterns.
