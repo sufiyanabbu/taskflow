@@ -72,16 +72,6 @@ A production-quality React frontend application built to demonstrate real-world 
 
 ---
 
-## Features
-
-- **Dashboard** — task list with real-time search, status and priority filters, and a stats bar showing task counts
-- **My Tasks** — filtered view showing only tasks assigned to the current user
-- **Team** — team member cards with role and task count
-- **Settings** — profile form with controlled inputs and preference toggles
-- **Active Navigation** — sidebar highlights the current page using React Router NavLink
-- **Responsive Layout** — sidebar + content shell that scales across screen sizes
-
----
 
 ## Tech Stack
 
